@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style> 
+    .bg{
+        width: 357px;
+        height: 357px;
+        border-radius: 70px;
+        background-color: #57C3EA;
+    }
+    .bg:before{
+        content:"";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 61px;
+        top: 59px;
+        z-index: 2;
+        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform-origin: bottom left;
+        -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        background-color: #57C3EA;
+        border-bottom-right-radius: 5px;
+    }
+    .bg:after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 79px;
+        top: 59px;
+        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform-origin: bottom left;
+        -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        background: -webkit-radial-gradient(right bottom, ellipse cover, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%); 
+        background: -o-radial-gradient(right bottom, ellipse cover, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%); 
+        background: -ms-radial-gradient(right bottom, ellipse cover, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%); 
+        background: radial-gradient(ellipse at right bottom, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%); 
+    }
+    .top{
+        width: 65px;
+        height: 80px;
+        background-color: #fff;
+        position: absolute;
+        left: 65px;
+        top: 60px;
+        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform-origin: bottom left;
+        -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 78px 0 0 #fff,155px 0 0 #fff;
+    }
+    .top:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 50px;
+        left: 29px;
+        bottom: -1px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        box-shadow: 78px 0 0 #57C3EA,155px 0 0 #57C3EA; 
+    }
+    .top:after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 0;
+        top: 18px;
+        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform-origin: bottom left;
+        -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        background: -webkit-radial-gradient(right bottom, ellipse cover, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%);
+        background: -o-radial-gradient(right bottom, ellipse cover, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%); 
+        background: -ms-radial-gradient(right bottom, ellipse cover, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%);
+        background: radial-gradient(ellipse at right bottom, #ffffff 0%,#ffffff 69%,#57C3EA 50%,#57C3EA 100%);
+    }
+    .bottom{
+        width: 65px;
+        height: 140px;
+        background-color: #fff;
+        position: absolute;
+        left: 65px;
+        top: 140px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 78px 0 0 #fff,155px 0 0 #fff;
+    }
+    .bottom:after{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 100px;
+        left: 29px;
+        top: 0;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        box-shadow: 78px 0 0 #57C3EA,155px 0 0 #57C3EA;;   
+    }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
